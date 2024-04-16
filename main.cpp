@@ -11,9 +11,9 @@ void
 DFS1(int v, const vector<vector<int>>& E, stack<int>& order)
 {
   discovered[v] = true;
-  for (int i = 0; i != E[v].size(); i++) {
-    if (!discovered[E[v][i]])
-      DFS1(E[v][i], E, order);
+  for (auto neighbor = E[v].begin(); neighbor != E[v].end(); neighbor++) {
+    if (!discovered[*neighbor])
+      DFS1(*neighbor, E, order);
   }
   order.push(v);
 }
@@ -23,9 +23,9 @@ DFS2(int v, const vector<vector<int>>& E, set<int>& EqNodes)
 {
   discovered[v] = true;
   EqNodes.insert(v);
-  for (int i = 0; i != E[v].size(); i++)
-    if (!discovered[E[v][i]])
-      DFS2(E[v][i], E, EqNodes);
+  for (auto neighbor = E[v].begin(); neighbor != E[v].end(); neighbor++)
+    if (!discovered[*neighbor])
+      DFS2(*neighbor, E, EqNodes);
   return EqNodes;
 }
 
@@ -34,10 +34,10 @@ printDiGraph(const vector<vector<int>>& E, stack<int>& order);
 void
 printEqClass(const set<int>& EqNodes, int EqClassID);
 
-int n, m; // n nodes m edges
 int
 main()
 {
+  int n, m;      // n nodes m edges
   cin >> n >> m; // node range from [0, n)
   vector<vector<int>> E1;
   vector<vector<int>> E2;
@@ -69,7 +69,7 @@ printDiGraph(const vector<vector<int>>& E, stack<int>& order)
 
   set<int> sinkClassNodes;
   int NumEqClass = 0;
-  for (int i = n - 1; i >= 0; i--) {
+  while (!order.empty()) {
     int sink = order.top();
     order.pop();
     if (discovered[sink])
@@ -80,7 +80,7 @@ printDiGraph(const vector<vector<int>>& E, stack<int>& order)
     NumEqClass++;
   }
 
-  for (int i = 0; i < n; i++)
+  for (int i = 0; i != E.size(); i++)
     for (auto node_out = E[i].begin(); node_out != E[i].end(); node_out++)
       cout << "        " << i << " -> " << *node_out << ";\n";
 
