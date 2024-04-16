@@ -4,17 +4,18 @@
 #include <stack>
 #include <vector>
 using std::cin, std::cout, std::endl, std::vector, std::stack, std::set;
-const int N = 1e6 + 1;
+const int N = 1e6 + 1;  // maximum of n
+
 bool discovered[N];
 
 void
 DFS1(int v, const vector<vector<int>>& E, stack<int>& order)
 {
   discovered[v] = true;
-  for (auto neighbor = E[v].begin(); neighbor != E[v].end(); neighbor++) {
+  for (auto neighbor = E[v].begin(); neighbor != E[v].end(); neighbor++)
     if (!discovered[*neighbor])
       DFS1(*neighbor, E, order);
-  }
+
   order.push(v);
 }
 
@@ -37,7 +38,7 @@ printEqClass(const set<int>& EqNodes, int EqClassID);
 int
 main()
 {
-  int n, m;      // n nodes m edges
+  int n, m;      // n nodes, m edges
   cin >> n >> m; // node range from [0, n)
   vector<vector<int>> E1;
   vector<vector<int>> E2;
