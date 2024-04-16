@@ -38,7 +38,7 @@ int
 main()
 {
   int n, m;      // n nodes, m edges
-  cin >> n >> m; // node range from [0, n)
+  cin >> n >> m; // node range: [0, n)
   vector<vector<int>> E1;
   vector<vector<int>> E2;
 
