@@ -19,7 +19,7 @@ DFS1(int v, const vector<vector<int>>& E, stack<int>& order)
   order.push(v);
 }
 
-set<int>
+void
 DFS2(int v, const vector<vector<int>>& E, set<int>& EqNodes)
 {
   discovered[v] = true;
@@ -27,7 +27,6 @@ DFS2(int v, const vector<vector<int>>& E, set<int>& EqNodes)
   for (auto neighbor = E[v].begin(); neighbor != E[v].end(); neighbor++)
     if (!discovered[*neighbor])
       DFS2(*neighbor, E, EqNodes);
-  return EqNodes;
 }
 
 void
