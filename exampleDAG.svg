@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="367pt" height="105pt" viewBox="0.00 0.00 367.37 105.00">
+<g id="graph0" class="graph" transform="translate(4,101) scale(1)" data-name="">
+<polygon fill="white" stroke="none" points="-4,4 -4,-101 363.37,-101 363.37,4 -4,4" style=""/>
+<!-- Eq_0 -->
+<g id="node1" class="node" pointer-events="visible" data-name="Eq_0">
+
+<ellipse fill="none" stroke="black" cx="327.95" cy="-79" rx="31.34" ry="18" style=""/>
+<text text-anchor="middle" x="327.95" y="-74.8" font-family="Times,serif" font-size="14.00" style="">Eq_0</text>
+</g>
+<!-- Eq_1 -->
+<g id="node2" class="node" pointer-events="visible" data-name="Eq_1">
+
+<ellipse fill="none" stroke="black" cx="229.1" cy="-56" rx="31.34" ry="18" style=""/>
+<text text-anchor="middle" x="229.1" y="-51.8" font-family="Times,serif" font-size="14.00" style="">Eq_1</text>
+</g>
+<!-- Eq_1&#45;&gt;Eq_0 -->
+<g id="edge1" class="edge" data-name="Eq_1-&gt;Eq_0">
+
+<path fill="none" stroke="black" d="M258.64,-62.78C267.7,-64.93 277.89,-67.35 287.57,-69.65" style=""/>
+<polygon fill="black" stroke="black" points="286.61,-73.02 297.14,-71.92 288.22,-66.21 286.61,-73.02" style=""/>
+</g>
+<!-- Eq_2 -->
+<g id="node3" class="node" pointer-events="visible" data-name="Eq_2">
+
+<ellipse fill="none" stroke="black" cx="130.26" cy="-18" rx="31.34" ry="18" style=""/>
+<text text-anchor="middle" x="130.26" y="-13.8" font-family="Times,serif" font-size="14.00" style="">Eq_2</text>
+</g>
+<!-- Eq_2&#45;&gt;Eq_1 -->
+<g id="edge2" class="edge" data-name="Eq_2-&gt;Eq_1">
+
+<path fill="none" stroke="black" d="M156.71,-27.98C167.52,-32.23 180.32,-37.25 192.08,-41.86" style=""/>
+<polygon fill="black" stroke="black" points="190.5,-45 201.08,-45.4 193.05,-38.49 190.5,-45" style=""/>
+</g>
+<!-- Eq_3 -->
+<g id="node4" class="node" pointer-events="visible" data-name="Eq_3">
+
+<ellipse fill="none" stroke="black" cx="31.42" cy="-64" rx="31.34" ry="18" style=""/>
+<text text-anchor="middle" x="31.42" y="-59.8" font-family="Times,serif" font-size="14.00" style="">Eq_3</text>
+</g>
+<!-- Eq_3&#45;&gt;Eq_0 -->
+<g id="edge3" class="edge" data-name="Eq_3-&gt;Eq_0">
+
+<path fill="none" stroke="black" d="M62.13,-68.85C73.58,-70.62 86.8,-72.55 98.84,-74 170.29,-82.62 188.59,-85.16 260.52,-83 268.53,-82.76 277.07,-82.36 285.27,-81.89" style=""/>
+<polygon fill="black" stroke="black" points="285.26,-85.4 295.03,-81.31 284.84,-78.41 285.26,-85.4" style=""/>
+</g>
+<!-- Eq_3&#45;&gt;Eq_1 -->
+<g id="edge4" class="edge" data-name="Eq_3-&gt;Eq_1">
+
+<path fill="none" stroke="black" d="M63,-62.75C96.07,-61.4 149.02,-59.23 186.02,-57.72" style=""/>
+<polygon fill="black" stroke="black" points="186.06,-61.22 195.91,-57.32 185.77,-54.23 186.06,-61.22" style=""/>
+</g>
+<!-- Eq_3&#45;&gt;Eq_2 -->
+<g id="edge5" class="edge" data-name="Eq_3-&gt;Eq_2">
+
+<path fill="none" stroke="black" d="M56.36,-52.63C68,-47.1 82.2,-40.35 94.97,-34.29" style=""/>
+<polygon fill="black" stroke="black" points="96.37,-37.5 103.9,-30.05 93.36,-31.18 96.37,-37.5" style=""/>
+</g>
+</g>
+</svg>

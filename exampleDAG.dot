@@ -1,0 +1,12 @@
+digraph {
+    rankdir = LR;
+    Eq_0;
+    Eq_1;
+Eq_1 -> Eq_0;
+    Eq_2;
+Eq_2 -> Eq_1;
+    Eq_3;
+Eq_3 -> Eq_0;
+Eq_3 -> Eq_1;
+Eq_3 -> Eq_2;
+}

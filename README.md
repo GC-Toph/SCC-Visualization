@@ -6,7 +6,7 @@ usage:
 
 ```bash
 g++ main.cpp -o main
-./main < in.txt > example.dot
+./main in.txt example.dot exampleDAG.dot
 ```
 
 `in.txt` format description:
@@ -14,6 +14,7 @@ g++ main.cpp -o main
 - The first line consists of two integers, n and m, representing the number of nodes and the number of edges, respectively.
 - Following are m lines, each containing two integers, a and b, indicating a directed edge from node a to node b. The range of a and b is \[0, n\).
 
-`example.dot` can be rendered by graphviz.
+`example.dot` and `exampleDAG.dot` can be rendered by graphviz.
 
 ![example](example.svg)
+![exampleDAG](exampleDAG.svg)
